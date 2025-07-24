@@ -1,5 +1,13 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "devDependencies": {
     "turbo": "^2.5.5"
-  }
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev"
+  },
+  "packageManager": "npm@11.4.1"
 }
